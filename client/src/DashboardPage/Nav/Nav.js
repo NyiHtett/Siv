@@ -6,7 +6,7 @@ const NavLogo = () => {
     return(
         <div className="nav-logo-container">
             {/* 100% means the image will be the size of the parent */}
-            <img className='nav-logo' width="100%" height="100%" src={logo}/> 
+            <img className='nav-logo' width="150%" height="150%" src={logo}/> 
         </div>
     )
 };
@@ -38,7 +38,7 @@ function Nav() {
     <div className='nav-container'>
       <NavLogo/> 
       <div className='nav-buttons-container'>
-        <NavButton text="Browse" onClickHandler={handleNavigateToChannels}/>
+        <NavButton text="Siv" onClickHandler={handleNavigateToChannels}/>
         {
           !isLogged ?
           (<NavButton text="Login" onClickHandler={handleNavigateToAuth}/>)
